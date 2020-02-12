@@ -1,0 +1,8 @@
+- name : My Third playbook
+  hosts: all
+  tasks:
+    - name: Copy Module
+      copy: 
+        content: "Bye Bye"
+        dest: /tmp/third.txt
+        follow: no

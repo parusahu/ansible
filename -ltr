@@ -1,0 +1,227 @@
+node1.sanofi.com | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "10.0.2.15", 
+            "192.168.56.101"
+        ], 
+        "ansible_all_ipv6_addresses": [
+            "fe80::cadb:9d98:9fb6:3c89", 
+            "fe80::59a0:8c2f:688f:54fb"
+        ], 
+        "ansible_apparmor": {
+            "status": "disabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "12/01/2006", 
+        "ansible_bios_version": "VirtualBox", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/vmlinuz-3.10.0-862.el7.x86_64", 
+            "LANG": "en_GB.UTF-8", 
+            "crashkernel": "auto", 
+            "quiet": true, 
+            "rd.lvm.lv": "centos/swap", 
+            "rhgb": true, 
+            "ro": true, 
+            "root": "/dev/mapper/centos-root"
+        }, 
+        "ansible_date_time": {
+            "date": "2020-02-11", 
+            "day": "11", 
+            "epoch": "1581415147", 
+            "hour": "15", 
+            "iso8601": "2020-02-11T09:59:07Z", 
+            "iso8601_basic": "20200211T152907906303", 
+            "iso8601_basic_short": "20200211T152907", 
+            "iso8601_micro": "2020-02-11T09:59:07.906378Z", 
+            "minute": "29", 
+            "month": "02", 
+            "second": "07", 
+            "time": "15:29:07", 
+            "tz": "IST", 
+            "tz_offset": "+0530", 
+            "weekday": "mardi", 
+            "weekday_number": "2", 
+            "weeknumber": "06", 
+            "year": "2020"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "10.0.2.15", 
+            "alias": "enp0s3", 
+            "broadcast": "10.0.2.255", 
+            "gateway": "10.0.2.2", 
+            "interface": "enp0s3", 
+            "macaddress": "08:00:27:2d:f2:ce", 
+            "mtu": 1500, 
+            "netmask": "255.255.255.0", 
+            "network": "10.0.2.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_device_links": {
+            "ids": {
+                "dm-0": [
+                    "dm-name-centos-root", 
+                    "dm-uuid-LVM-L3JnacLlQRJmPyLPtF8Y0kl1SXzzCmogRjc4sOPHclHsJ1qHQ0Yb2Bq40O57ANRf"
+                ], 
+                "dm-1": [
+                    "dm-name-centos-swap", 
+                    "dm-uuid-LVM-L3JnacLlQRJmPyLPtF8Y0kl1SXzzCmogxYJXz0GLF4V6tH8OZBZYJ2cxB4dd6Wgn"
+                ], 
+                "sda": [
+                    "ata-VBOX_HARDDISK_VBe7c97ceb-130f8bc7"
+                ], 
+                "sda1": [
+                    "ata-VBOX_HARDDISK_VBe7c97ceb-130f8bc7-part1"
+                ], 
+                "sda2": [
+                    "ata-VBOX_HARDDISK_VBe7c97ceb-130f8bc7-part2", 
+                    "lvm-pv-uuid-4FxKf9-6Qmw-fHBn-LGMl-bbLL-Lqch-dipvq5"
+                ], 
+                "sr0": [
+                    "ata-VBOX_CD-ROM_VB2-01700376"
+                ]
+            }, 
+            "labels": {}, 
+            "masters": {
+                "sda2": [
+                    "dm-0", 
+                    "dm-1"
+                ]
+            }, 
+            "uuids": {
+                "dm-0": [
+                    "462d8eec-b31c-4a47-8d3a-ba99d8e909f1"
+                ], 
+                "dm-1": [
+                    "dee15231-43a3-48ff-b370-b26fa186d61f"
+                ], 
+                "sda1": [
+                    "04745de4-7724-420a-975e-a46eee1c29ca"
+                ]
+            }
+        }, 
+        "ansible_devices": {
+            "dm-0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [
+                        "dm-name-centos-root", 
+                        "dm-uuid-LVM-L3JnacLlQRJmPyLPtF8Y0kl1SXzzCmogRjc4sOPHclHsJ1qHQ0Yb2Bq40O57ANRf"
+                    ], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": [
+                        "462d8eec-b31c-4a47-8d3a-ba99d8e909f1"
+                    ]
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "12992512", 
+                "sectorsize": "512", 
+                "serial": "VBe7c97ceb", 
+                "size": "6.20 GB", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "dm-1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [
+                        "dm-name-centos-swap", 
+                        "dm-uuid-LVM-L3JnacLlQRJmPyLPtF8Y0kl1SXzzCmogxYJXz0GLF4V6tH8OZBZYJ2cxB4dd6Wgn"
+                    ], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": [
+                        "dee15231-43a3-48ff-b370-b26fa186d61f"
+                    ]
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "1679360", 
+                "sectorsize": "512", 
+                "serial": "VBe7c97ceb", 
+                "size": "820.00 MB", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "sda": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [
+                        "ata-VBOX_HARDDISK_VBe7c97ceb-130f8bc7"
+                    ], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VBOX HARDDISK", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [
+                                "ata-VBOX_HARDDISK_VBe7c97ceb-130f8bc7-part1"
+                            ], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": [
+                                "04745de4-7724-420a-975e-a46eee1c29ca"
+                            ]
+                        }, 
+                        "sectors": "2097152", 
+                        "sectorsize": 512, 
+                        "size": "1.00 GB", 
+                        "start": "2048", 
+                        "uuid": "04745de4-7724-420a-975e-a46eee1c29ca"
+                    }, 
+                    "sda2": {
+                        "holders": [
+                            "centos-root", 
+                            "centos-swap"
+                        ], 
+                        "links": {
+                            "ids": [
+                                "ata-VBOX_HARDDISK_VBe7c97ceb-130f8bc7-part2", 
+                                "lvm-pv-uuid-4FxKf9-6Qmw-fHBn-LGMl-bbLL-Lqch-dipvq5"
+                            ], 
+                            "labels": [], 
+                            "masters": [
+                                "dm-0", 
+                                "dm-1"
+                            ], 
+                            "uuids": []
+                        }, 
+                        "sectors": "14678016", 
+                        "sectorsize": 512, 
+                        "size": "7.00 GB", 
+                        "start": "2099200", 
+                        "uuid": null
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "16777216", 
+                "sectorsize": "512", 
+                "serial": "VBe7c97ceb", 
+                "size": "8.00 GB", 
+                "support_discard": "0", 
+                "ven

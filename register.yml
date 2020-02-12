@@ -1,0 +1,11 @@
+- name:
+  hosts: all
+  tasks: 
+    - name: remove
+      yum:
+        name: httpd
+        state: absent
+      register: Output
+    - name: Prints the Output register variable
+      debug:
+        var: Output.rc

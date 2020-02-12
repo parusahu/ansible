@@ -1,0 +1,9 @@
+- name: install the software
+  tasks:
+    - name: install the software
+      yum:
+        name: vsftpd
+        state: present
+     - name: print something
+       debug:
+        msg: 

@@ -1,0 +1,25 @@
+- name: Multiple methods for getting Variable Values
+  hosts: all
+#*****************vars:
+#    value: "Parul"
+#  tasks:
+#    - name: Get value locally from this playbook
+#      debug: 
+#        msg: My Name is {{value}}
+#**********  vars_prompt:
+#    - name: "Prompt"
+#      prompt: "My name is"
+#      private: no
+#  tasks:
+#    - name: Get Value as input from Prompt
+#      debug:
+#        msg: "{{Prompt}}"
+#*****  vars_files:
+#     file1
+#  tasks:
+#   - name: Get Value from external file
+#     debug:
+#      msg: My Name is {{pkg1}} 
+  tasks:
+    - debug:
+        msg: My name is {{pkg1}}

@@ -1,0 +1,11 @@
+- name: Access Management
+  hosts: all
+  tasks:
+    - name: add group "sandlab" to hosts1
+      group:
+        name: sandlab
+        state: present
+    - name: add user "pag" to hosts1
+      user:
+        name: pag
+        group: sandlab

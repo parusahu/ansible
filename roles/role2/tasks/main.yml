@@ -1,0 +1,5 @@
+---
+# tasks file for role2
+- name: print something 
+  debug:
+    msg: Hi There {{var1}}

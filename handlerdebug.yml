@@ -1,0 +1,16 @@
+- name:
+  hosts: all
+  become: yes
+  gather_facts: yes
+  ignore_errors: yes
+  force_handlers: yes
+  tasks:
+    - name: install the software
+      yum:
+        name: httpd
+        state: present
+      register: Parul
+      failed_when: Parul.changed == false
+    - name: print something
+      debug:
+        msg: task not executed

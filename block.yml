@@ -1,0 +1,17 @@
+- name: using blcok
+  hosts: all
+  become: all
+  tasks:
+    - block:
+      - name: task1
+        yum:
+          name: httpd1234
+          state: present
+      rescue:
+        - name: task2
+          debug:
+            msg: task rescued
+      always:
+        - name: task3
+          debug:
+            msg: this will always run

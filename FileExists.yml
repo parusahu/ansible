@@ -1,0 +1,9 @@
+- name: Check If File Exists
+  hosts: all
+  tasks:
+    - name: File Exist Check
+      stat:
+        path: /tmp/fileexist.txt
+      register: stat_result
+    - name 
+

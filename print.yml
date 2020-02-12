@@ -1,0 +1,15 @@
+- name: Ansible prompt for Input exercise
+  hosts: all
+  vars:
+    pkg1: Ayush
+  tasks:
+    - debug:
+        msg: My name is "{{pkg1}}"
+      vars: 
+        pkg1: Parul
+    - debug:
+        msg: and not "{{pkg1}}"
+      register: Output
+    - name: Prints the register variable
+      debug:
+        var: Output

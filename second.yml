@@ -1,0 +1,5 @@
+- name : My Second Playbook
+  hosts: all
+  tasks:
+    - name: Display Date
+      command: /bin/date

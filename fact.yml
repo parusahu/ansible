@@ -1,0 +1,13 @@
+- name: Using Facts
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Prints Ip address of the remote machin
+      debug:
+        msg: This machine's ipaddress is {{ansible_default_ipv4.address}}
+    - name: Prints fqdn of the machine
+      debug:
+        msg: This machine's fqdn is {{ansible_fqdn}}
+    - name: Prints memory usage
+      debug:
+        msg: The memory is {{ansible_memory_mb}}
